@@ -1,6 +1,22 @@
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen {
+    .giving__container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: .75rem;
+    }
+    .gift__container{
+        row-gap: .75rem;
+    }
+    .celebrate__description {
+        margin-bottom: var(--mb-1);
+    }
+    .home__container {
+        row-gap: .5rem;
+    }
+}
+
+@media screen and (min-width: 320px){
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -8,12 +24,13 @@
 
     .giving__container {
         grid-template-columns: repeat(1, 1fr);
-        gap: 1.5rem;
+        gap: .75rem;
     }
 
     .gift__container{
         grid-template-columns: 288px;
         justify-content: center;
+        row-gap: .75rem;
     }
 }
 
@@ -165,7 +182,7 @@
     .giving{
         &__container{
             column-gap: 2.5rem;
-            padding-top: 2rem;
+            // padding-top: 2rem;
         }
         &__img{
             width: 120px;

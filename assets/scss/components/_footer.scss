@@ -21,6 +21,10 @@
     }
     &__description{
         font-size: var(--small-font-size);
+        a {
+            color: #9f151d !important;
+            font-weight: bold;
+        }
     }
     &__logo,
     &__title{

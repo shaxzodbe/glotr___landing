@@ -28,6 +28,10 @@ body.dark-theme{
 .dark-theme .nav__menu{
     box-shadow: 0 2px 4px hsla(0, 0%, 4%, .3);
 }
+.dark-theme .accordion__description a,
+.dark-theme .footer__description a {
+    color: white !important;
+}
 .dark-theme .scrollup{
     background-color: #fff;
     &__icon{

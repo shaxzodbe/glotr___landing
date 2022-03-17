@@ -138,6 +138,11 @@ body.dark-theme {
           box-shadow: 0 2px 4px rgba(10, 10, 10, 0.3);
 }
 
+.dark-theme .accordion__description a,
+.dark-theme .footer__description a {
+  color: white !important;
+}
+
 .dark-theme .scrollup {
   background-color: #fff;
 }
@@ -483,6 +488,11 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
+.accordion__description a {
+  color: #9f151d !important;
+  font-weight: bold;
+}
+
 .accordion__icon {
   font-size: 1.5rem;
   height: -webkit-max-content;
@@ -763,6 +773,11 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
+.footer__description a {
+  color: #9f151d !important;
+  font-weight: bold;
+}
+
 .footer__logo, .footer__title {
   margin-bottom: var(--mb-1);
 }
@@ -853,7 +868,24 @@ body.dark-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen {
+  .giving__container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    gap: .75rem;
+  }
+  .gift__container {
+    row-gap: .75rem;
+  }
+  .celebrate__description {
+    margin-bottom: var(--mb-1);
+  }
+  .home__container {
+    row-gap: .5rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -861,7 +893,7 @@ body.dark-theme {
   .giving__container {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
+    gap: .75rem;
   }
   .gift__container {
     -ms-grid-columns: 288px;
@@ -869,6 +901,7 @@ body.dark-theme {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    row-gap: .75rem;
   }
 }
 
@@ -1012,7 +1045,6 @@ body.dark-theme {
   .giving__container {
     -webkit-column-gap: 2.5rem;
             column-gap: 2.5rem;
-    padding-top: 2rem;
   }
   .giving__img {
     width: 120px;

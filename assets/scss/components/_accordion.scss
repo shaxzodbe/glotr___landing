@@ -25,6 +25,10 @@
     &__description{
         padding: 0 1.25rem 1.25rem 3rem;
         font-size: var(--smaller-font-size);
+        a {
+            color: #9f151d !important;
+            font-weight: bold;
+        }
     }
     &__icon{
         font-size: 1.5rem;
