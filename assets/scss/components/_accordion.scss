@@ -2,15 +2,12 @@
 .accordion{
     display: grid;
     align-content: center;
-    height: 100vh;
+    margin-bottom: 60px;
+    // height: 100vh;
 
     &__container{
         display: grid;
         row-gap: .75rem;
-        padding: 2rem 1rem;
-        background-color: var(--container-color);
-        border-radius: .5rem;
-        box-shadow: 0 12px 32px hsla(0, 0%, 20%, 0.1);
     }
     &__title{
         font-size: var(--small-font-size);
