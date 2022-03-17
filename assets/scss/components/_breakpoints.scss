@@ -19,6 +19,23 @@
 
 /* For medium devices */
 @media screen and (min-width: 576px){
+    .accordion{
+        &__container{
+            width: 550px;
+            padding: 2.5rem;
+            justify-self: center;
+            border-radius: .75rem;
+        }
+        &__header{
+            padding: 1.5rem;
+        }
+        &__title{
+            padding-right: 3.5rem;
+        }
+        &__description{
+            padding: 0 4rem 1.25rem 3.5rem;
+        }
+    }
     .home__description{
         padding: 0 8rem;
     }
