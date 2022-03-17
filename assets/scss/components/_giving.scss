@@ -11,6 +11,8 @@
         background: var(--container-color);
         border-radius: 0.75rem;
         justify-content: space-between;
+        background-color: var(--container-color);
+        box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
     }
 
     &__img{

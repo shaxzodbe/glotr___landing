@@ -403,6 +403,9 @@ body.dark-theme {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: var(--container-color);
+  -webkit-box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1);
+          box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1);
 }
 
 .giving__img {
