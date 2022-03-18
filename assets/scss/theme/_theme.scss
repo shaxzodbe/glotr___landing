@@ -47,7 +47,7 @@ body.dark-theme{
 .dark-theme .accordion__item:nth-child(2),
 .dark-theme .accordion__item:nth-child(3),
 .dark-theme .accordion__item:nth-child(4) {
-    background-color: #141521;
+    background-color: var(--container-color);
 }
 .dark-theme .footer{
     background-color: #141521;
