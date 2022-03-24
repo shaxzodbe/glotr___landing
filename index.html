@@ -247,12 +247,10 @@
         <!--==================== MESSAGE ====================-->
         <section class="message section container">
             <div class="message__container grid">
-                <form action="" class="message__form">
+                <form action="" class="message__form" >
                     <h2 class="message__title">Зарегистрироваться <br> в три клика</h2>
                     <label class="message__label" for="phoneInput">Укажите ваш телефон номер</label><br>
-                    <input type="tel" id="phoneInput" class="message__input" minlength="13"             maxlength="13"
-                        spellcheck="false" name="RegistrationForm[phone_number]" autocomplete="off"
-                        value="+998"  aria-invalid="true">
+                    <input type="tel" id="phoneInput" value="+998" class="message__input" name="message__input" pattern="[+]{1}[0-9]{12}" required>
 
                     <button type="submit" class="button message__button">Отправить</button>
                 </form>
